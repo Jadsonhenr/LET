@@ -1,0 +1,81 @@
+/* Reset de estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo do container principal da aplicação */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo para o Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav a {
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+}
+
+/* Estilo para o conteúdo principal */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
