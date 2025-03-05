@@ -8,44 +8,48 @@ const Cards = () => {
       title: "Primeiro Caderno",
       description: "Saiba mais sobre o Primeiro Caderno do LET.",
       img: "./img/1.png",
-      link: "/primeiro-caderno", // Link para a página de "Primeiro Caderno"
+      src: "/caderno de desenho volume 1.jpg", // Link para a página do PDF
     },
     {
       title: "Ciclo de Palestras",
       description: "Descubra o que está planejado para o Ciclo de Palestras.",
       img: "./img/1.png",
-      link: "/ciclo-de-palestras", // Link para a página de "Ciclo de Palestras"
+      link: "/ciclo-de-palestras",
     },
     {
       title: "Expo 2025",
       description: "Tudo sobre a Exposição 2025.",
       img: "./img/1.png",
-      link: "/expo-2025", // Link para a página de "Expo 2025"
+      link: "/expo-2025",
     },
     {
       title: "Publicações",
       description: "Confira nossas publicações mais recentes.",
       img: "./img/1.png",
-      link: "/publicacoes", // Link para a página de "Publicações"
+      link: "/publicacoes",
     },
   ];
 
   return (
-    <>
-      <h2>1º ano do LET</h2>
-      <div className="cards-container">
-        {cardData.map((card, index) => (
-          <div className="card" key={index}>
-            <img src={card.img} alt={card.title} />
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
-            <Link to={card.link} className="card-link">
-              Saiba Mais
-            </Link>
-          </div>
-        ))}
-      </div>
-    </>
+    <div className="lugar">
+      <section className="topo">
+        <div className="fundo">
+          <img src="./img/01.png" alt="fundo"/>
+        </div>
+        <div className="cards-container">
+          {cardData.map((card, index) => (
+            <div className="card" key={index}>
+              <h3 className="marquee">{card.title}</h3>
+              <img src={card.img} alt={card.title} />
+              <p>{card.description}</p>
+              <Link to={card.link} className="card-link">
+                Saiba Mais
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -1,0 +1,74 @@
+/* auth.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Container centralizado para os formulários */
+  .auth-container {
+    width: 400px;
+    padding: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Título do formulário */
+  .auth-container h2 {
+    margin-bottom: 1.5em;
+    color: #333;
+  }
+  
+  /* Estilo do formulário */
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Inputs de email e senha */
+  .auth-container input[type="email"],
+  .auth-container input[type="password"] {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  /* Botão de submit */
+  .auth-container button {
+    padding: 0.8em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mensagens de feedback */
+  .auth-container .message {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #e74c3c;
+  }
+  

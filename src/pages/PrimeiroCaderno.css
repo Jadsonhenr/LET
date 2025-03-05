@@ -1,0 +1,24 @@
+/* PrimeiroCaderno.css */
+.primeiro-caderno-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .conteudo-primeiro-caderno {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .conteudo-primeiro-caderno .texto {
+    font-size: 1.2em;
+    line-heiPrimeiroCaderno.cssght: 1.6;
+  }
+  
+  .conteudo-primeiro-caderno .imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

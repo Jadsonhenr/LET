@@ -1,4 +1,5 @@
 /* Reset */
+@import '../variavel.css';
 * {
     margin: 0;
     padding: 0;
@@ -9,25 +10,23 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Estilo do Header */
   .header {
     display: flex;
-    align-items:baseline;
-    background-color: #282c34;
-    color: white;
-    flex-direction: column;
-    gap: .3em;
-    height: 95px;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: space-between; /* Espaça a logo e o menu */
+    background-color: #3b3838;
+    height: 80px;
+    padding: 0 20px; /* Espaçamento horizontal interno */
   }
   
   .logo {
     display: flex;
     align-items: center;
-    margin: 0.5em;
+    margin: 2em 12em;
   }
   
   .logo img {
-    height: 50px;
+    height: 55px;
     margin-right: 10px;
   }
   .LET{
@@ -37,33 +36,39 @@
   .nav {
     display: flex;
     gap: 15px;
-    align-items:center;
-    width: 800px;
-    justify-content: space-around;
+    align-items: center; /* Certifique-se de que os itens do menu estejam alinhados no centro */
+    justify-content: center; /* Centraliza o menu em relação ao contêiner do nav */
+    flex-grow: 1; /* Permite que o menu ocupe o espaço necessário */
   }
   
   .nav a {
+    text-align: end;
     text-decoration: none;
-    color: #61dafb;
+    color: #fff;
     font-size: 16px;
     transition: color 0.3s;
-    background-color:#8e998aa2;
-    width: 150px;
-    align-items: center;
-    border-radius: 6px;
-  }
-  
+    width:auto;
+  } 
   .nav a:hover {
-    color: white;
+    color: rgb(89, 192, 4);
   }
   
+  /* Responsividade */
   @media (max-width: 768px) {
+    .nav {
+      flex-wrap: wrap; /* Permite que o menu quebre linha em telas pequenas */
+    }
+  
     .nav a {
       font-size: 14px;
     }
   
     .logo img {
       height: 40px;
+    }
+  
+    .language-2 {
+      flex-direction: column; /* Coloca os botões de idioma em pilha */
     }
   }
   

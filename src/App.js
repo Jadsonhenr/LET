@@ -8,18 +8,23 @@ import PrimeiroCaderno from './pages/PrimeiroCaderno';
 import CicloDePalestras from './pages/CicloDePalestras';
 import Expo2025 from './pages/Expo2025';
 import Publicacoes from './pages/Publicacoes';
+import Equipe from './pages/Equipe'; // Certifique-se de que o caminho está correto
+import Servico3D from './pages/Servico3D'
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Header>
+      
+      </Header>
       <Routes>
         <Route path="/" element={
           <>
-            <Carousel />
             <Cards />
           </>
         } />
+        <Route path="/equipe" element={<Equipe />} />
+        <Route path="/Servico3D" element={<Servico3D />} />
         <Route path="/primeiro-caderno" element={<PrimeiroCaderno />} />
         <Route path="/ciclo-de-palestras" element={<CicloDePalestras />} />
         <Route path="/expo-2025" element={<Expo2025 />} />

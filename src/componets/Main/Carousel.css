@@ -1,8 +1,9 @@
 /* Estilos globais para o carrossel */
+@import '../variavel.css';
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 50vh; /* O carrossel ocupa 100% da altura da tela */
+    height: 45vh; /* O carrossel ocupa 100% da altura da tela */
     overflow: hidden;
   }
   
@@ -16,32 +17,43 @@
   
   .carousel-image {
     width: 100%;
-    height: auto;
-    object-fit: cover; /* Faz a imagem cobrir toda a tela sem distorcer */
+    height: 100%;
+    object-fit:fill; /* Faz a imagem cobrir toda a tela sem distorcer */
   }
   
   button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
     border: none;
     font-size: 30px;
-    padding: 10px;
+    padding: 6px;
     cursor: pointer;
     z-index: 10;
+    height: 10em;
+    width: 1.2em;
   }
   
   button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.096);
   }
   
   .prev {
     left: 10px;
   }
-  
   .next {
     right: 10px;
   }
+  .carousel-slide img {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .carousel-slide img.hidden {
+    opacity: 0;
+  }
+  
   

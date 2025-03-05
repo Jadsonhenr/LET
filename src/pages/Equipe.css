@@ -1,0 +1,104 @@
+.equipe {
+  padding: 20px;
+  min-height: 10vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Grid de imagens com 3 colunas e 2 linhas */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Linha horizontal com os nomes ajustada */
+.names-line {
+  display: flex;
+  flex-direction: row; /* Garante que os itens fiquem na mesma linha */
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.name-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.name-button:hover {
+  text-decoration: underline;
+}
+
+/* Se não for usar modal, as classes abaixo podem ser removidas */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.modal-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-text {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: left;
+}

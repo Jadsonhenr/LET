@@ -1,9 +1,22 @@
+*{
+  text-decoration: none;
+}
 .footer {
-    background-color: #222;
+    background-color: #8ace00;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     font-family: Arial, sans-serif;
+    text-decoration: none;
+  }
+  .footer22{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer22 h4{
+    color: #000000;
+    text-decoration: none;
   }
   
   .footer-container {
@@ -45,6 +58,9 @@
     font-size: 24px;
     transition: color 0.3s;
   }
+  .social-icons img{
+    width: 35px;
+  }
   
   .social-icons a:hover {
     color: #ff5e57;
@@ -53,6 +69,6 @@
   .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
-    color: #aaa;
+    color: #000000;
   }
   

@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+      <div className="footer-container">
+        <div className="footer-info">
+          <h4>Contatos</h4>
+          <p>Email: contato@exemplo.com</p>
+          <p>Telefone: (11) 1234-5678</p>
+          <p>Endereço: FURG Universidade Federal do Rio Grande - Aeroporto, Rio Grande - RS</p>
+        </div>
+
+        <div className="footer-socials">
+          <h4>Siga-nos</h4>
+          <div className="social-icons">
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+               <img src="./img/tiktok.png" alt="#"></img>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="./img/instagram.png" alt="#"></img>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src="./img/facebook.png" alt="#"></img>
+            </a>
+          </div>
+        </div>
+      </div>
