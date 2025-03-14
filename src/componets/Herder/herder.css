@@ -35,23 +35,31 @@
   }
   .nav {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center; /* Certifique-se de que os itens do menu estejam alinhados no centro */
     justify-content: center; /* Centraliza o menu em relação ao contêiner do nav */
     flex-grow: 1; /* Permite que o menu ocupe o espaço necessário */
   }
   
   .nav a {
-    text-align: end;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    transition: color 0.3s;
-    width:auto;
-  } 
+    padding: 0px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+  }
+  
   .nav a:hover {
     color: rgb(89, 192, 4);
   }
+  
+  /* Estilo para o link ativo */
+  .nav a.active {
+    color: rgb(89, 192, 4);
+    font-weight: bold;
+  }
+  
   
   /* Responsividade */
   @media (max-width: 768px) {

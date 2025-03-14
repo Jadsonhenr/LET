@@ -1,0 +1,61 @@
+.contato-container {
+    display: flex;           /* Exibe em colunas lado a lado */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;  /* Alinha as colunas no topo (início) */
+    gap: 40px;               /* Espaço entre as colunas */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cada coluna terá largura de ~50% (ajuste conforme desejar) */
+  .coluna {
+    flex: 1;
+    min-width: 280px;        /* Para evitar que fique muito estreita em telas pequenas */
+  }
+  
+  /* Se quiser limitar a largura máxima de cada coluna, descomente:
+  .coluna {
+    flex: none;
+    width: 45%;
+  }
+  */
+  
+  .colaboradores h2,
+  .endereco h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .colaboradores h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  .colaboradores p,
+  .endereco p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .endereco h2 {
+    margin-top: 20px;
+  }
+  
+  /* Ajuste de responsividade para telas menores */
+  @media (max-width: 768px) {
+    .contato-container {
+      flex-direction: column; /* Empilha as colunas em telas pequenas */
+    }
+    
+    .coluna {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
